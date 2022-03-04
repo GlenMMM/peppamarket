@@ -45,10 +45,7 @@ const Navbar = ({ toggle, toggleC }) => {
         <Link className="p-4" href="/our-works" passHref>
           <a className="hover:font-semibold active:font-semibold">Our works</a>
         </Link>
-        <a
-          className="p-4 cursor-pointer hover:font-semibold active:font-semibold"
-          onClick={toggleC}
-        >
+        <a className="p-4 cursor-pointer hover:font-semibold active:font-semibold">
           Contact us
         </a>
       </div>

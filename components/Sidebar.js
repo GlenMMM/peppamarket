@@ -10,7 +10,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           : "translate-x-full"
       }
     >
-      <div className="absolute top-0 right-0 z-30 w-full bg-red-200 h-full">
+      <div className="absolute top-0 right-0 z-30 w-full bg-red-100 h-full">
         <div className="flex pb-7 p-5 items-center justify-between">
           <div>
             <Link href="/" passHref>
@@ -26,12 +26,12 @@ const Sidebar = ({ isOpen, toggle }) => {
               </a>
             </Link>
           </div>
-          <div className="p-2 cursor-pointer" onClick={toggle}>
+          <div className="cursor-pointer" onClick={toggle}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
               viewBox="0 0 20 20"
-              fill="currentColor"
+              fill="red"
             >
               <path
                 fillRule="evenodd"
