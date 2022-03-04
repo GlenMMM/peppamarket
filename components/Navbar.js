@@ -14,7 +14,7 @@ const Navbar = ({ toggle, toggleC }) => {
             src="/icons/dark-icon.svg"
             alt="merokket-logo"
             width={50}
-            height={38}
+            height={40}
           />
         </Link>
       </div>
