@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/dist/client/image";
 
-const Sidebar = ({ isOpen, toggle, toggleC }) => {
+const Sidebar = ({ isOpen, toggle }) => {
   return (
     <div
       className={
@@ -10,7 +10,7 @@ const Sidebar = ({ isOpen, toggle, toggleC }) => {
           : "translate-x-full"
       }
     >
-      <div className="absolute top-0 right-0 z-30 w-11/12 max-w-xs bg-white h-full rounded-l-lg">
+      <div className="absolute top-0 right-0 z-30 w-full bg-red-200 h-full">
         <div className="flex pb-7 p-5 items-center justify-between">
           <div>
             <Link href="/" passHref>
@@ -18,11 +18,11 @@ const Sidebar = ({ isOpen, toggle, toggleC }) => {
                 <Image
                   className="object-contain cursor-pointer"
                   src="/icons/dark-icon.svg"
-                  alt="merokket-logo"
+                  alt="Peppamarket-logo"
                   width={40}
                   height={30}
                 />
-                <h2>Merokket</h2>
+                <h2>Peppamarket</h2>
               </a>
             </Link>
           </div>
@@ -41,7 +41,7 @@ const Sidebar = ({ isOpen, toggle, toggleC }) => {
             </svg>
           </div>
         </div>
-        <div className="h-px mx-5 bg-gray-300"></div>
+        <div className="h-px mx-5"></div>
         <ul className="px-5 pt-3" onClick={toggle}>
           <li>
             <Link href="/" passHref>
@@ -65,19 +65,12 @@ const Sidebar = ({ isOpen, toggle, toggleC }) => {
             </Link>
           </li>
           <li>
-            <a
-              className="block py-3 px-5 rounded-lg focus:bg-gray-100 cursor-pointer"
-              onClick={toggleC}
-            >
+            <a className="block py-3 px-5 rounded-lg focus:bg-gray-100 cursor-pointer">
               Contact us
             </a>
           </li>
         </ul>
       </div>
-      <div
-        className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-25"
-        onClick={toggle}
-      />
     </div>
   );
 };

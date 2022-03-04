@@ -12,7 +12,7 @@ const Navbar = ({ toggle, toggleC }) => {
           <Image
             className="object-contain cursor-pointer"
             src="/icons/dark-icon.svg"
-            alt="merokket-logo"
+            alt="peppamarket-logo"
             width={50}
             height={40}
           />
